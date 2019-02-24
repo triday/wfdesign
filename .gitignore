@@ -1,2 +1,4 @@
 node_modules
 dist
+*.less.d.ts
+/.vscode
