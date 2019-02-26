@@ -37,7 +37,6 @@ module.exports = {
                     'file-loader'
                 ]
             },
-
             {
                 test: /\.less$/,
                 use: [
@@ -60,6 +59,12 @@ module.exports = {
                 test: /\.tsx?$/,
                 use: 'ts-loader',
                 exclude: /node_modules/
+            },{
+                test:/normalize\.css$/,
+                use:[
+                    'style-loader',
+                    'css-loader'
+                ]
             }
         ]
     },
